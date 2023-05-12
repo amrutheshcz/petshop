@@ -1,0 +1,253 @@
+{% extends 'app_customer/dashboard.html' %}
+ {% block title %}
+  shop by brands
+ {% endblock %}
+{% block content %}
+ {% load static %}
+<h2>Brands</h2>
+<!-- <div class="brands-list">
+    <ul>
+        <li style="width: 16%;">
+            <a  class="images" href="view_products"><img src="{% static 'images/drools-logo.png' %}"class="card-img-top" alt="..."></a>
+        </li>
+        <li style="width: 16%;">
+            <a  class="images" href="view_products"><img src="{% static 'images/drools-logo.png' %}"class="card-img-top" alt="..."></a>
+        </li>
+    </ul>
+</div>
+<div>
+    <ul>
+        <li style="width: 16%;">
+            <a  class="images" href="view_products"><img src="{% static 'images/drools-logo.png' %}"class="card-img-top" alt="..."></a>
+        
+            <a  class="images" href="view_products"><img src="{% static 'images/drools-logo.png' %}"class="card-img-top" alt="..."></a>
+        </li>
+    </ul>
+
+
+</div> -->
+<link rel="stylesheet" href="{% static 'css/brand.css' %}">
+  <section class="h-100 gradient-form" style="background-color: #eee;">
+    <div class="container py-5 h-100">
+      <div class="row d-flex justify-content-center align-items-center h-100">
+        <div class="col-xl-10">
+          <div class="card rounded-3 text-black">
+            <div class="container ">
+        
+                <div class="row">
+                  <div class="col-lg-3 pb-4">
+                    <div class="card" style="width: 10rem ;">
+                      <a class="images" href="view_products"><img src="{% static 'images/farmina-logo.png' %}"class="card-img-top"
+                         alt="logo"></a>
+                                               
+                    </div>
+                    <div>
+                      <a class="nav-link" href="view_products" align="center" >FARMINA</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 10rem;">
+                      <a  class="images" href="view_products"><img src="{% static 'images/pedigree-logo.png' %}"class="card-img-top"
+                         alt="logo"></a>
+                    </div>
+                    <div>
+                      <a class="nav-link" href="view_products" align="center" >PEDIGREE</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 10rem;">
+                      <a  class="images" href="view_products"><img src="{% static 'images/Royal-Canin-Logo.png' %}"class="card-img-top"
+                        alt="logo"></a>
+                    </div>
+                    <div>
+                      <a class="nav-link" href="view_products" align="center" >ROYAL CANINE</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                    <div class="card" style="width: 10rem;">
+                      <a  class="images" href="view_products"><img src="{% static 'images/whiskas-log.png' %}"class="card-img-top"
+                         alt="logo" ></a>
+                    </div>
+                    <div>
+                      <a class="nav-link" href="view_products" align="center" >WHISKAS</a>
+                    </div>
+                  </div>
+            
+                </div>
+                <div class="row">
+                  <div class="col pb-4">
+                    <div class="card" style="width: 10rem;">
+                      <a  class="images" href="view_products"><img src="{% static 'images/Me-O.png' %}" class="card-img-top"alt=".."></a>
+                      
+                    </div>
+                    <div>
+                      <a class="nav-link" href="view_products" align="center" >MEO</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                        <div class="card" style="width: 10rem;">
+                          <a  class="images" href="view_products"><img src="{% static 'images/ND.png' %}"class="card-img-top" alt="..."></a>
+                          
+                        </div>
+                        <div>
+                          <a class="nav-link" href="view_products" align="center" >N & D</a>
+                        </div>
+                     
+                  </div>
+                  <div class="col">
+                        <div class="card" style="width: 10rem;">
+                          <a  class="images" href="view_products"><img src="{% static 'images/Versele-Laga-Logo.png' %}"class="card-img-top" alt="..."></a>
+                          
+                        </div>
+                        <div>
+                          <a class="nav-link" href="view_products" align="center" >VERSELE LAGA</a>
+                        </div>
+                     
+                  </div>
+                  <div class="col">
+                        <div class="card" style="width: 10rem;">
+                          <a  class="images" href="view_products"><img src="{% static 'images/Smart-Heart-logo.png' %}"class="card-img-top" alt="..."></a>
+                          
+                        </div>
+                        <div>
+                          <a class="nav-link" href="view_products" align="center" >SMART HEART</a>
+                        </div>
+                     
+                  </div>
+            
+                </div>
+                <div class="row">
+                  <div class="col pb-4">
+                    <div class="card" style="width: 10rem;">
+                      <a  class="images" href="view_products"><img src="{% static 'images/acana-logo.png' %}"class="card-img-top" alt="..."></a>
+                      
+                    </div>
+                    <div>
+                      <a class="nav-link" href="view_products" align="center" >ACANA</a>
+                    </div>
+                  </div>
+                  <div class="col">
+                        <div class="card" style="width: 10rem;">
+                          <a  class="images" href="view_products"><img src="{% static 'images/drools-logo.png' %}"class="card-img-top" alt="..."></a>
+                          
+                        </div>
+                        <div>
+                          <a class="nav-link" href="view_products" align="center" >DROOLS</a>
+                        </div>
+                     
+                  </div>
+                  <div class="col">
+                        <div class="card" style="width: 10rem;">
+                          <a  class="images" href="view_products"><img src="{% static 'images/Himalaya-Logo.png' %}"class="card-img-top" alt="..."></a>
+                          
+                        </div>
+                        <div>
+                          <a class="nav-link" href="view_products" align="center" >HIMALAYA</a>
+                        </div>
+                     
+                  </div>
+                  <div class="col">
+                        <div class="card" style="width: 10rem;">
+                          <a  class="images" href="view_products"><img src="{% static 'images/Chappi.png' %}"class="card-img-top" alt="..."></a>
+                          
+                        </div>
+                        <div>
+                          <a class="nav-link" href="view_products" align="center" >CHAPPI</a>
+                        </div>
+                     
+                  </div>
+            
+                </div>
+                <div class="row">
+                    <div class="col pb-4">
+                      <div class="card" style="width: 10rem;">
+                        <a  class="images" href="view_products"><img src="{% static 'images/Farrmina-Vet-Life.png' %}" class="card-img-top"alt=".."></a>
+                        
+                      </div>
+                      <div>
+                        <a class="nav-link" href="view_products" align="center" >VET LIFE</a>
+                      </div>
+                    </div>
+                    <div class="col">
+                          <div class="card" style="width: 10rem;">
+                            <a  class="images" href="view_products"><img src="{% static 'images/pawise-logo.png' %}"class="card-img-top" alt="..."></a>
+                            
+                          </div>
+                          <div>
+                            <a class="nav-link" href="view_products" align="center" >PAWISE</a>
+                          </div>
+                       
+                    </div>
+                    <div class="col">
+                          <div class="card" style="width: 10rem;">
+                            <a  class="images" href="view_products"><img src="{% static 'images/Purina-logo.png' %}"class="card-img-top" alt="..."></a>
+                            
+                          </div>
+                          <div>
+                            <a class="nav-link" href="view_products" align="center" >PURINA</a>
+                          </div>
+                       
+                    </div>
+                    <div class="col">
+                          <div class="card" style="width: 10rem;">
+                            <a  class="images" href="view_products"><img src="{% static 'images/Canine-Creek-logo.png' %}"class="card-img-top" alt="..."></a>
+                            
+                          </div>
+                          <div>
+                            <a class="nav-link" href="view_products" align="center" >CANINE CREEK</a>
+                          </div>
+                       
+                    </div>
+              
+                  </div>
+                  <div class="row">
+                    <div class="col pb-4">
+                      <div class="card" style="width: 10rem;">
+                        <a  class="images" href="view_products"><img src="{% static 'images/chipsi-logo.png' %}"class="card-img-top" alt="..."></a>
+                        
+                      </div>
+                      <div>
+                        <a class="nav-link" href="view_products" align="center" >CHIPSI</a>
+                      </div>
+                    </div>
+                    <div class="col">
+                          <div class="card" style="width: 10rem;">
+                            <a  class="images" href="view_products"><img src="{% static 'images/jerhigh-Logo.png' %}"class="card-img-top" alt="..."></a>
+                            
+                          </div>
+                          <div>
+                            <a class="nav-link" href="view_products" align="center" >JER HIGH</a>
+                          </div>
+                       
+                    </div>
+                    <div class="col">
+                          <div class="card" style="width: 10rem;">
+                            <a  class="images" href="view_products"><img src="{% static 'images/nutribird-logo.png' %}"class="card-img-top" alt="..."></a>
+                            
+                          </div>
+                          <div>
+                            <a class="nav-link" href="view_products" align="center" >NUTRI BIRD</a>
+                          </div>
+                       
+                    </div>
+                    <div class="col">
+                          <div class="card" style="width: 10rem;">
+                            <a  class="images" href="view_products"><img src="{% static 'images/sheba-logo.png' %}"class="card-img-top" alt="..."></a>
+                            
+                          </div>
+                          <div>
+                            <a class="nav-link" href="view_products" align="center" >SHEBA</a>
+                          </div>
+                       
+                    </div>
+              
+                  </div>
+               
+              </div>
+               
+          </div>
+        </div>
+    </div>
+  </section>
+
+{% endblock %}

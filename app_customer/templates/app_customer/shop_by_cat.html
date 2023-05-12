@@ -1,0 +1,78 @@
+{% extends 'app_customer/dashboard.html' %}  
+{% block title %}
+Buy best cat accessories and products
+{% endblock %}  
+
+
+{% block content %}
+
+
+  {% load static %}
+ 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="{% static 'css/shopdog_style.css' %}">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+         <div class="dog_sidebar" style="background-color: rgba(242, 242, 207, 0.29);">
+          <ul class="nav flex-column">
+            <h2>BRANDS</h2>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">Acana</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">Me-O</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">Whiskas</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">drools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">purepet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">Farmina</a>
+            </li>   
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">Sheba</a>
+            </li>        
+                
+          </ul>
+        
+          </div>
+      </div>
+      <div class="col-sm-9" style=" padding: 25px;">
+        <div class="container ">
+          <div class=" row dog-menu">      
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Cat-Food-Treats.jpg' %}"class="card-img-top" alt="..."><label for="">FOOD & TREATS</label></a>
+              
+            </div>
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Cat-Collars.jpg' %}"class="card-img-top" alt="..."><label for="">COLLARS , TAGS & LEASHES</label></a>
+            </div>
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Cat-Toys.jpg' %}"class="card-img-top" alt="..."><label>TOYS</Label></a>
+            </div>          
+          </div>
+          <div class=" row dog-menu">      
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Cat-Bowls-Feeders.jpg' %}"class="card-img-top" alt="..."><label>BOWLS & FEEDERS</Label></a>
+            </div>
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Cat-Scratches.jpg' %}"class="card-img-top" alt="..."><label>SCRATCHES</Label></a>
+            </div>
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Cat-Grooming.jpg' %}"class="card-img-top" alt="..."><label>GROOMING</Label></a>
+            </div>          
+          </div>
+        </div>  
+        
+      </div>
+    </div>
+
+  </div>
+  
+{% endblock %}

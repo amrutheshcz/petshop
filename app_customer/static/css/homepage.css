@@ -1,0 +1,24 @@
+.center{
+    align-items: center;
+}
+
+.images{
+align-items: center;
+width: "11rem";
+height: "11rem";
+}
+
+h2{
+    padding: 5px;
+    border: 5px;
+}
+
+.card{
+    padding: 5px,5px,5px;
+    border: 5px;
+}
+
+h2{
+     font-style: italic;
+     align-items: center;
+}

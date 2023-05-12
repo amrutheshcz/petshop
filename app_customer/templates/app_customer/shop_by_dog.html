@@ -1,0 +1,81 @@
+{% extends 'app_customer/dashboard.html' %}
+{% load static %}
+
+  {% block title %}
+   Buy best dog accessories and products
+  {% endblock %}
+
+  {% block header %}
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="{% static 'css/shopdog_style.css' %}">  {% endblock %}
+
+  {% block content %}
+
+ 
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-3">
+         <div class="dog_sidebar" style="background-color: rgba(242, 242, 207, 0.29);">
+          <ul class="nav flex-column">
+            <h2>BRANDS</h2>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">pedigree</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">royal canin</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">iams</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">drools</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">purepet</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">smart heart</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="view_products">Canine creek</a>
+            </li>
+            
+          </ul>
+        
+          </div>
+      </div>
+      <div class="col-sm-9" style=" padding: 25px;">
+        <div class="container ">
+          <div class=" row dog-menu">      
+            <div class="col carddog card" >
+              <a  class="images text-center " href="view_products"><img src="{% static 'images/Dog-Food.jpg' %}"class="card-img-top" alt="..."><label for="">FOOD</label></a>
+              
+            </div>
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Dog-Treats-Chews.jpg' %}"class="card-img-top" alt="..."><label for="">TREATS & CHEWS</label></a>
+            </div>
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Dog-toys.jpg' %}"class="card-img-top" alt="..."><label>TOYS</Label></a>
+            </div>          
+          </div>
+          <div class=" row dog-menu">    
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Dog-Collars-Leashes.jpg' %}"class="card-img-top" alt="..."><label>COLLARS & LEASHES</Label></a>
+            </div>   
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Dog-Bowls-Feeders.jpg' %}"class="card-img-top" alt="..."><label>BOWLS & FEEDERS</Label></a>
+            </div>
+            <div class="col carddog card" >
+              <a  class="images text-center" href="view_products"><img src="{% static 'images/Dog-Health-Wellness.jpg' %}"class="card-img-top" alt="..."><label>HEALTH & WELLNESS</Label></a>
+            </div>
+                     
+          </div>
+        </div>  
+        
+      </div>
+    </div>
+
+  </div>
+  
+{% endblock %}

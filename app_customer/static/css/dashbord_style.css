@@ -1,0 +1,19 @@
+.modal_style{
+    /* background-color: aqua; */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-image: url('https://t3.ftcdn.net/jpg/03/27/32/82/240_F_327328286_461LsXbDU6VCqUWzNYX4ahuVWUho0vZv.jpg')
+}
+.modal_header{
+    background-color: grey;
+}
+.dropdown-menu {
+    width: 500px !important;
+    height: 400px !important;
+}
+
+.footer1{
+    background-color: rgb(190, 101, 101);
+}
+

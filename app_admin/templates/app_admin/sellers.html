@@ -1,0 +1,29 @@
+{% extends 'app_admin/homepage.html' %}{% block content %}
+{% load static %}
+
+<h1>sellers</h1>
+
+<div class="container-fluid">
+   <table class="table table-bordered">
+    <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>phone number</th>
+        <th>email</th>
+        
+    </tr>
+    {% for seller in seldet %}
+    {% if seller.status == 'approved' %}
+  
+    <tr>
+        <td>{{forloop.counter}}</td>
+        <td>{{seller.first_name}}</td>
+        <td>{{seller.phone_number}}</td>
+        <td>{{seller.username}}</td>
+        
+    </tr>      
+    {% endif %}  
+    {% endfor %}
+   </table>
+</div>
+{% endblock %}

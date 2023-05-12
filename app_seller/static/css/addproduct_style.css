@@ -1,0 +1,50 @@
+.inputbox{
+    width: 20rem; height: 4rem;
+    row-gap: 5px;
+}
+.button {
+    border-radius: 2px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 13px;
+    padding: 5px;
+    width: 100px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 1px;
+    
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .gradient-custom-2 {
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size:contain;
+    background-image: url('https://media.istockphoto.com/vectors/dog-walking-rules-during-quarantine-owner-girl-or-sitter-in-a-sterile-vector-id1215552956?k=20&m=1215552956&s=612x612&w=0&h=Pfvvt8j-na-6VEx9isS_cDA7hn5_wEk8aoQZi4U1iI4=');
+     }

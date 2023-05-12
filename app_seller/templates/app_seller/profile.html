@@ -1,0 +1,15 @@
+{% extends 'app_seller/dashboard.html' %} {% block content %}
+{% load static %}
+<link rel="stylesheet" href="{% static 'css/profile_style.css' %}">
+<div class="container">
+    <img src="{% static 'images/img_avatar.png' %}" alt="Avatar" class="image">
+    <div class="overlay" name="name">{{currentUser.first_name}} </div>
+    
+</div>
+<div class="container">
+    <label for="">name :{{currentUser.first_name}}</label>
+    <label for="">phone number :{{currentUser.phone_number}}</label>
+    <label for="">email :{{currentUser.username}}</label>
+</div>
+
+{% endblock %}
